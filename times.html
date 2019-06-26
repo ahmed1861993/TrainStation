@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="img/LOGO1234.png">
+
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="css/vendor/font-awesome.min.css">
+  <link rel="stylesheet" href="css/vendor/animate.min.css">
+  <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/vendor/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Train Station</title>
+
+</head>
+
+
+
+
+
+
+
+
+<body>
+
+
+  <!-- Top Nav -->
+
+  <div class="topNav fixed-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 mt-2">
+          <i class="fa fa-facebook fa-x text-light mr-1 "></i>
+          <i class="fa fa-twitter fa-x text-light mr-1"></i>
+          <i class="fa fa-google-plus fa-x text-light mr-1"></i>
+        </div>
+
+
+
+        <div class="col-md-6 col-8  text-right">
+          <ul class=" pt-2">
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-2 col-4 ">
+                <li class="d-inline   mr-1 pr-2 border-right border-light"><a href="" data-toggle="modal"
+                    data-target="#modalLoginForm" class="textdecor white-color white-color">Login</a></li>
+              </div>
+
+              <div class=" col-md-2 col-4 ">
+                <li class="d-inline"><a href="" data-toggle="modal" data-target="#modalRegisterForm"
+                    class="textdecor white-color">Sign up</a></li>
+              </div>
+              <div class=" col-md-2 col-4 ">
+                <li class="d-inline"><a href="../Arabic/index-ar.html" 
+                    class="textdecor white-color">عربي</a></li>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- End top Nav -->
+
+  <!-- Nav Bar -->
+
+
+
+  <nav class="navbar navbar-expand-lg  nav-color fixed-top">
+
+      <div class="col-1">
+
+        </div>
+        
+      <div class="col-4 ml-5">
+          <img src="img/LOGO1234.png" width="100px" height="70px">
+        </div>
+
+    <button class="navbar-toggler btn-outline-dark" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon collapse-color"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto container">
+        <li class="nav-item active  mr-3 ml-4 ">
+          <a class="nav-link  font-weight-bold sizefont white-color " href="index.html">Home <span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item  mr-3 ">
+          <a class="nav-link font-weight-bold sizefont white-color  active " href="times.html">Trips Scidual</a>
+        </li>
+        <li class="nav-item  mr-3">
+          <a class="nav-link  font-weight-bold sizefont white-color" href="booking.html">Book a Ticket</a>
+        </li>
+        <li class="nav-item  mr-3">
+          <a class="nav-link  font-weight-bold sizefont white-color" href="findit.html">Follow Train</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+
+
+  <!-- End nav bar -->
+  <!--=======================================================================End  Nav =====================================================================-->
+  <!--====================================================================== time filter =====================================================================-->
+  <div class="trainsearch">
+
+    <img class="imgtimeschadule" src="img/slide2.jpg">
+
+    <form method="POST">
+
+      <div class="container  timescadulefilter ">
+        <div class="row timefilter ">
+          <div class="col-sm-3">
+            <select name="from">
+              <option value="alex">alex</option>
+              <option value="cairo">cairo</option>
+              <option value="banha">banha</option>
+              <option value="tanta">tanta</option>
+
+            </select>
+          </div>
+          <div class="col-sm-3">
+            <select name="to">
+              <option value="alex">alex</option>
+              <option value="cairo">cairo</option>
+              <option value="banha">banha</option>
+              <option value="tanta">tanta</option>
+
+            </select>
+          </div>
+
+              <div class="col-sm-2  datebox">
+                <input type="date" />
+              </div>
+              <div class="col-sm-3 timedate">
+                <input type="radio" name="time" value="AM"> <span class="text-light">AM</span>
+                <input type="radio" name="time" value="PM"> <span class="text-light">PM</span>
+                <input type="radio" name="time" value="ALL"> <span class="text-light">All</span>
+      
+          </div>
+          <div class="col-sm-1">
+            <input class="find_button fontcolor" type="submit" value="search">
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!--======================================================================END  time filter =====================================================================-->
+  <!--======================================================================train schadule card =====================================================================-->
+
+
+
+
+
+
+
+
+  <div class="container trains-table">
+    <h2><small>4 Trains available for your inputs </small></h2>
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">kind</th>
+            <th scope="col">from</th>
+            <th scope="col">to</th>
+            <th scope="col">sart</th>
+            <th scope="col">end</th>
+            <th scope="col">hours</th>
+            <th scope="col">stops</th>
+            <th scope="col">booking</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th scope="row">982</th>
+           
+            <td>Vip</td>
+        
+            <td>alex</td>
+            <td>cairo</td>
+            <td>6:00am</td>
+            <td>9:00am</td>
+            <td>3</td>
+            <td>3 stps</td>
+            <td>  <button type="button" class="booking-btn" data-toggle="modal" data-target="#exampleModal">
+              book
+            </button>
+          </td>
+            
+          </tr>
+          <tr>
+              <th scope="row">982</th>
+             
+              <td>Vip</td>
+          
+              <td>alex</td>
+              <td>cairo</td>
+              <td>6:00am</td>
+              <td>9:00am</td>
+              <td>3</td>
+              <td>3 stps</td>
+              <td>  <button type="button" class="booking-btn" data-toggle="modal" data-target="#exampleModal">
+                book
+              </button>
+            </td>
+              
+            </tr>
+            <tr>
+                <th scope="row">982</th>
+               
+                <td>Vip</td>
+            
+                <td>alex</td>
+                <td>cairo</td>
+                <td>6:00am</td>
+                <td>9:00am</td>
+                <td>3</td>
+                <td>3 stps</td>
+                <td>  <button type="button" class="booking-btn" data-toggle="modal" data-target="#exampleModal">
+                  book
+                </button>
+              </td>
+                
+              </tr>
+              <tr>
+                  <th scope="row">982</th>
+                 
+                  <td>Vip</td>
+              
+                  <td>alex</td>
+                  <td>cairo</td>
+                  <td>6:00am</td>
+                  <td>9:00am</td>
+                  <td>3</td>
+                  <td>3 stps</td>
+                  <td>  <button type="button" class="booking-btn" data-toggle="modal" data-target="#exampleModal">
+                    book
+                  </button>
+                </td>
+                  
+                </tr>
+                <tr>
+                    <th scope="row">982</th>
+                   
+                    <td>Vip</td>
+                
+                    <td>alex</td>
+                    <td>cairo</td>
+                    <td>6:00am</td>
+                    <td>9:00am</td>
+                    <td>3</td>
+                    <td>3 stps</td>
+                    <td>  <button type="button" class="booking-btn" data-toggle="modal" data-target="#exampleModal">
+                      book
+                    </button>
+                  </td>
+                    
+                  </tr>
+        
+        </tbody>
+      </table>
+     
+
+  </div>
+
+  <!--====================================================================== ENd train schadule card =====================================================================-->
+
+
+  <!-- Scroll Button -->
+
+  <div class="scll-btn" id="scll-btn">
+    <i class="fa fa-arrow-circle-up fa-2x"></i>
+  </div>
+
+  <!-- End scroll Button -->
+
+
+
+  <!-- Footer -->
+
+  <footer class="footer">
+    <div class="container footer pt-4  text-light">
+      <div class="row">
+        <div class="col-md-6 col-12">
+          <h4>Contact Us</h4>
+          <i class="fa fa-envelope prefix grey-text fontcolor"></i>
+          <h6>Train.Staion@gmail.com</h6>
+          <i class="fa fa-phone prefix grey-text fontcolor"></i>
+          <h6>Phone Number : 12345678</h6>
+          <i class="fa fa-home prefix grey-text fontcolor"></i>
+          <h6>Adress : 20 St Masr Elgdeda</h6>
+        </div>
+
+        <div class="col-md-6 mt-4">
+          <div class="col-12">
+            <img src="img/LOGO1234.png" width="100px" height="70px">
+          </div>
+
+          <div class=" col-12 mt-5 pb-5">
+            <h6>Copy Rights &copy; 2019, Developed By Ahmed Saeed & Khaled Tag</h6>
+          </div>
+        </div>
+
+
+
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- End Footer -->
+
+
+
+
+
+  <!-- Login Modal -->
+
+  <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content modal-bg">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold fontcolor">Sign in</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-2 row">
+            <div class="col-md-1">
+              <i class="fa fa-envelope prefix grey-text fontcolor"></i>
+            </div>
+            <div class="col-md-11">
+              <input type="email" id="defaultForm-email" class="form-control validate modal-input modal-input-place"
+                placeholder="Your email">
+              <label data-error="wrong" data-success="right" for="defaultForm-email"></label>
+            </div>
+          </div>
+
+          <div class="md-form mb-1 row">
+            <div class="col-md-1">
+              <i class="fa fa-lock prefix grey-text fontcolor"></i>
+            </div>
+            <div class="col-md-11">
+              <input type="password" id="defaultForm-pass" class="form-control validate modal-input modal-input-place"
+                placeholder="Your password">
+              <label data-error="wrong" data-success="right" for="defaultForm-pass"></label>
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button class="slide-btn">Login</button>
+          <button class="slide-btn" aria-hidden="true" data-dismiss="modal" aria-label="Close">Close
+            &times;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- End Login Modal -->
+
+  <!-- Start signup modal -->
+
+  <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog " role="document">
+      <div class="modal-content modal-bg">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold fontcolor">Sign up</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-2 row">
+
+            <div class="col-md-1">
+              <i class="fa fa-pencil prefix grey-text fontcolor"></i>
+            </div>
+            <div class="col-md-11">
+              <input type="text" id="orangeForm-name" class="form-control validate modal-input modal-input-place"
+                placeholder="Your name">
+              <label data-error="wrong" data-success="right" for="orangeForm-name"></label>
+            </div>
+          </div>
+          <div class="md-form mb-2 row">
+            <div class="col-md-1">
+              <i class="fa fa-envelope prefix grey-text fontcolor"></i>
+            </div>
+            <div class="col-md-11">
+              <input type="email" id="orangeForm-email" class="form-control validate modal-input modal-input-place"
+                placeholder="Your email">
+              <label data-error="wrong" data-success="right" for="orangeForm-email"></label>
+            </div>
+          </div>
+
+          <div class="md-form mb-2 row">
+            <div class="col-md-1">
+              <i class="fa fa-lock prefix grey-text fontcolor"></i>
+            </div>
+            <div class="col-md-11">
+              <input type="password" id="orangeForm-pass" class="form-control validate modal-input modal-input-place"
+                placeholder="Your password">
+              <label data-error="wrong" data-success="right" for="orangeForm-pass"></label>
+            </div>
+          </div>
+
+          <div class="md-form mb-2 row">
+            <div class="col-md-1">
+              <i class="fa fa-drivers-license-o prefix grey-text fontcolor"></i>
+            </div>
+            <div class="col-md-11">
+              <input type="text" id="orangeForm-pass" class="form-control validate modal-input modal-input-place"
+                placeholder="Your Address">
+              <label data-error="wrong" data-success="right" for="orangeForm-pass"></label>
+            </div>
+          </div>
+
+          <div class="md-form mb-2 row">
+            <div class="col-md-1">
+              <i class="fa fa-calendar prefix grey-text fontcolor"></i>
+            </div>
+            <div class="col-md-11">
+              <input type="date" placeholder="Your Birth Day" id="orangeForm-pass"
+                class="form-control validate modal-input modal-input-place">
+              <label data-error="wrong" data-success="right" for="orangeForm-pass"></label>
+            </div>
+          </div>
+
+          <div class="md-form mb-1 row">
+            <div class="col-md-1">
+              <i class="fa fa-phone prefix grey-text fontcolor"></i>
+            </div>
+            <div class="col-md-11">
+              <input type="text" id="orangeForm-pass" class="form-control validate modal-input modal-input-place"
+                placeholder="Your Phone Num.">
+              <label data-error="wrong" data-success="right" for="orangeForm-pass"></label>
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button class="slide-btn">Sign up</button>
+          <button class="slide-btn" aria-hidden="true" data-dismiss="modal" aria-label="Close">Close
+            &times;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- End signup modal -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

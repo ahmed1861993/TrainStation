@@ -1,0 +1,820 @@
+
+/* General Classes */
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.white-color{
+    color: #fff; 
+    transition: all 0.6s ease-in-out;
+    font-size: 13px;
+}
+
+
+
+.white-color:hover{
+    color:  #bd5d1e;
+    border-bottom: 1px solid #bd5d1e;
+}
+ 
+.gray-color{
+ color: #666;
+}
+.orangeborder{
+   border-bottom:3px solid  #bd5d1e;
+   width: 100px;
+}
+
+.fontcolor{
+    color: #bd5d1e;
+  }
+
+  .collapse-color{
+    background:rgba(0,0,0,0.2) ;
+  }
+
+  .sizefont{
+    font-size: 16px; 
+}
+
+.btncolor{
+    background: #bd5d1e;
+    border: 0;
+    border-radius: 8px 12px;
+    padding: 10px 25px;
+    color: #fff;
+  }
+
+  .maincolor{
+    background:rgba(57, 28, 75, 1) ;
+  }
+
+  .title-line{
+    height: 3px;
+    width:150px;
+    background:rgb(85, 23, 121) ;
+    margin: auto;
+
+  }
+  /* ************************************************************************************* */
+/* NAV SECTION */
+.topNav{
+    background:rgba(53, 23, 72, 1) ;
+    width:100%;
+    height: 40px;
+}
+.topNav i{
+    cursor: pointer;
+}
+
+.topNav i:hover,.topNav ul:hover{
+color: #bd5d1e!important
+}
+
+
+.nav-color{  
+    background:rgba(57, 28, 75, 0.6) ;
+    position: fixed;
+    top: 40px;
+}
+
+
+
+/* ************************************************************************* */
+/* SLIDE SECTION */
+
+.slide-btn-lg{
+    padding: 15px 50px;
+    color:#fff ;
+    font-size: 20px;
+   
+    background: none;
+    border: 2px solid #fff ;
+    font-weight: bold;
+    transition: all 0.7s ease-in-out;
+}
+
+.slide-btn-lg:hover{
+    background: rgb(61, 20, 85)  ;
+    border: 2px solid rgb(61, 20, 85) ;
+    color: #fff;
+    }
+
+
+
+    .slide-btn{
+        padding: 15px 30px;
+        border:  #bd5d1e;
+        color: #bd5d1e;
+        background: none;
+        border: 2px solid #bd5d1e;
+        font-weight: bold;
+        transition: all 0.4s ease-in-out;
+    }
+    
+    .slide-btn:hover{
+        background:  #bd5d1e;
+        color: #fff;
+        }
+    
+
+    .slide-one{
+        background: url(../img/slide1.png);
+        background-size: cover;
+        width: 100%;
+        height: 100%;;
+    }
+
+    .slide-parent{
+        position: relative;
+    }
+    .slide-desc{
+        transform: translate(-50%,-20%);
+        position: relative;
+        top: 50%;
+        left: 50%;
+    }
+
+   
+/* ************************************************************************* */
+/* SERVICES SECTION */
+.service-i{
+ border-radius: 50%;
+ width: 50px;
+ border: #bd5d1e 2px solid;
+ padding: 10px 5px;
+ text-align: center;
+ color: #bd5d1e;
+ margin-left: 2%;
+ transition: all 0.7s ease-in-out;
+}
+
+
+.service-btn{
+    padding: 15px 30px;
+    border: 0;
+    color: #bd5d1e;
+    background: #fff;
+    border: 2px solid #bd5d1e;
+    font-weight: bold;
+    transition: all 0.7s ease-in-out;
+    text-decoration: none;
+}
+.service-btn a{
+    text-decoration: none;
+}
+
+.service-btn:hover{
+    padding: 15px 30px;
+    border: 0;
+    color: #fff;
+    background: #bd5d1e;
+    border: 2px solid #bd5d1e;
+    font-weight: bold;
+  
+   
+}
+
+
+/* ************************************************************************* */
+/* SECTION TIME SCIDUAL */
+
+
+/*========================================================     train table  time     ==============================*/
+
+
+@media only screen and (max-width: 600px) {
+  .table tr {
+     font-size: 5px;
+   }
+ }
+ tr:hover{
+   box-shadow: 0px 0px 30px #000000;
+   z-index: 2;
+   transition: all 200ms ease-in;
+   transform: scale(1.0);
+ }
+ .trains-table{
+ text-align: center;
+ }
+ 
+/*========================================================    end train table  time     ==============================*/
+
+
+
+/* SECTION Booking */
+ /*========================================================       img filter     ==============================*/
+
+/* card hover overllay*/
+
+
+
+.content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 70%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+
+
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+
+  opacity: 1;
+  color: #fff;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+.row-data{
+  justify-content: space-around;
+}
+
+.row-num{
+  justify-content: space-between;
+  COLOR: WHITE;
+}
+
+.card-title{
+  width: 80PX;
+  text-align: center;
+}
+
+/* end card overlay*/
+
+
+
+/* modal for ticket-data */ 
+
+.content{
+  position: relative;
+}
+
+/* modal ed for ticket-data */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .imgtimeschadule{
+    width:100%;
+    height: 600px;
+ 
+  }
+  .timescadulefilter{
+    width: auto;
+    height: auto;
+    background: rgb(189, 93, 30,0.8)  ;
+   
+    padding: 15px 30px;
+    border-radius: 15px 15px 0 0;
+    transform: translate(1%,-120%);
+  }
+ 
+.find_button {
+      font-size: 13px;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+      /* line-height: 40px; */
+     padding: 10px 20px;
+      background: #31124b;
+      border: none;
+      cursor: pointer;
+      border-radius:10px;
+}
+.timefilter{
+  text-align: center;
+  margin: auto 1px;
+  padding: 0px auto;
+
+ 
+}
+
+select{  
+    width: 200px;
+   border-radius:5px;
+   margin: 8px 0px;
+   padding: 10px 18px;
+  }
+  input[type=radio] {
+    margin: 13px 0px;
+}
+
+.datebox input[type=date], .datebox input[type=datetime-local], .datebox input[type=month], .datebox input[type=time] {
+    -webkit-appearance: listbox;
+    width: 180px;
+    border-radius: 5px;
+    margin: 6px 0px;
+    padding: 8px 20px;
+}
+/*========================================================       time train       ==============================*/
+
+
+
+
+.train{
+width: 21rem !important;
+
+}
+.trains{
+  justify-content: space-between;
+}
+.timetrain{
+
+min-height: 800px;
+text-align: center;
+
+}
+
+.traintimecard{
+  margin: 50px;
+padding: 0;
+justify-content: space-between;
+
+border-radius: 3%;
+
+}
+.trainkind{
+text-align: center;
+}
+
+.traintimeinf{
+  width: 95%;
+  margin:2.5% auto;
+  /* background: rgba(255, 255, 255, 0.65); */
+  background: rgb(61, 20, 85)  ;
+  border-radius: 3%;
+  text-align: center;
+
+}
+
+
+.fas{
+    font-size: 22px;
+  }
+  table{
+     margin: auto;
+  }
+  
+  #trainno{
+      margin: 0px auto;
+  }
+
+
+  .button-color{
+    background-color: 
+    #e06f30;
+    color: white;
+    border-radius: 20px;
+  }
+  
+  .button-color :hover{
+    background-color: 
+    #e06f30;
+    color: black;
+  }
+  
+
+
+.ticket{
+  text-align: left;
+  background:#f1eeeeaa;
+ 
+  margin-bottom: 5px;
+}
+.tickets{
+  height: auto;
+ 
+}
+ .carttrain{
+   border: 1px solid grey;
+    max-height: 300px;
+ }
+   
+   
+ .card-body {
+  background-color: #f1eeeeaa;
+     
+  }
+
+  .booking-btn{
+        font-size: 12px;
+        color: #bd5d1e;
+        padding: 2px 16px;
+        margin-top: 5px;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 40px;
+        background: #fff;
+        border: 2px solid #bd5d1e;
+        cursor: pointer;
+        border-radius:10px;
+        transition:all 0.3s ease-in-out;
+     }
+
+
+     .booking-btn:hover{
+        color: #fff;
+        background: #bd5d1e;
+ }
+/*========================================================       ==============================*/
+.trainnum
+{
+background-color: rgb(61, 20, 85) ;
+
+border-radius: 6px;
+
+}
+
+
+
+
+
+
+.traincard{
+  margin-bottom: 10px;
+}
+.p-radio{
+    display: inline;
+  }
+  
+  h3.sizing,p.sizing{
+    margin:2px;
+  }
+  h1.sizing{
+    font-weight: 1000;
+    font-size: 13px;
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* feedback */
+
+
+.opinions{
+    width: 100%;
+    height: auto;
+    /* background:  rgb(70, 27, 95) ; */
+    background-image: url(../img/rate.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+
+}
+.feed-overlay{
+  background: rgba(0,0,0,0.8);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+}
+
+.rate-img{
+width: 80px;
+height: 80px;
+margin-left:35%;
+margin-bottom: 1%;
+
+}
+
+.rate-img img{
+    border-radius: 50%;
+}
+
+
+
+
+ /* social */
+
+
+ .social{
+    width: 100%;
+   
+}
+.social-icon{
+    cursor: pointer;
+}
+
+.rate-img{
+width: 80px;
+height: 80px;
+margin-left:35%;
+margin-bottom: 1%;
+
+}
+
+.rate-img img{
+    border-radius: 50%;
+}
+
+
+
+
+/* Footer */
+.footer{
+    width: 100%;
+    height: auto;
+    background:rgb(23, 8, 32) ;
+    color: #fff;
+}
+/* **************************** */
+
+/* Scroll Button */
+.scll-btn{
+    width:40px;
+    height: 40px;
+    color:rgb(23, 8, 32) ;
+    background: #bd5d1e;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 5;
+    display: none;
+   
+}
+.scll-btn i{
+    cursor: pointer;
+   
+}
+
+
+
+/* Modal Section */
+.modal-bg{
+   background :rgba(53, 23, 72, 0.9);
+}
+
+.modal-input{
+    background: none;
+    color: #fff;
+    outline: 0;
+    border: 0;
+    border-bottom:1px solid #bd5d1e;
+    
+}
+
+.modal-input:focus{
+    background: none; 
+    color: #fff;
+    outline: 0;
+}
+
+.modal-input-place::placeholder{
+color: #fff;
+font-size: 16px
+}
+
+/* ************************************************************************* */
+/* MY PROFILE */
+
+.myprofile{
+
+width: 75%;
+height: auto;
+border: 1px solid #eee;
+margin: auto;
+padding: 20px 30px;
+ 
+}
+
+.profile-color{
+  background-color:  rgb(55, 14, 88) ;
+  background: linear-gradient(rgb(144, 82, 196), rgb(44, 7, 75))
+}
+
+.profile-img{
+  border-radius: 50%;
+}
+
+ .cart{
+ 
+ height: auto;
+
+ 
+
+
+ 
+}
+.cart img{
+    cursor: pointer;
+    border-radius: 50%;
+    
+   
+}
+
+.edit{
+    height: auto;
+}
+
+.star{
+  color: rgb(223, 136, 37) ;
+}
+/* ************************************************* */
+
+/* active */
+
+.active{
+    color: #bd5d1e;
+ font-size: 18px;
+  font-weight: bold;
+}
+
+
+
+/* contact section */
+
+.contact-input{
+  background-color: transparent;
+  color: #333;
+  outline: none!important;
+  border: 1px solid #b88361;
+  padding: 20px 10px;
+  
+ 
+  
+}
+
+.contact-input:focus{
+  background-color: transparent;
+  color: #333;
+  border-color: inherit;
+  outline: none!important;
+  border: 0;
+  border-bottom:2px solid #bd5d1e;
+  
+}
+
+.contact-input-place::placeholder{
+color: #333;
+font-size: 16px
+
+}
+
+
+
+
+/* News */
+
+
+.images{
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-background{
+  background:rgb(61, 35, 77) ;
+}
+
+.news-parent{
+  position: relative;
+  cursor: pointer;
+}
+
+.news-parent img{
+width:100%;
+height: 100%;
+}
+.news-overlay{
+  position: absolute!important;
+  top: 200px;
+  left: 0;
+  right: 0;
+  
+  width: 95%;
+  height: 100%;
+  margin: auto;
+  transition: all 0.4s ease-in-out;
+ 
+}
+
+.news-parent:hover .news-overlay{
+  background: rgba(0, 0, 0, 0.6);
+  background: rgb(189, 93, 30,0.3) ;
+  top: 0;
+  border-radius: 5px;
+}
+
+a.seemore{
+  text-decoration: none;
+  color: #bd5d1e;
+  font-size: 17px;
+  font-weight: bold;
+
+}
+a.seemore:hover{
+  color:#fff;
+}
+
+.favour-news{
+color: #f00;
+cursor: pointer;
+}
+
+.news-rad{
+ border-radius: 6px 6px 0 0;
+}
+
+
+
+.link-and-favour{
+  background:rgb(39, 14, 56);
+  border-radius: 0 0 6px 6px;
+  padding: 10px 0;
+}
